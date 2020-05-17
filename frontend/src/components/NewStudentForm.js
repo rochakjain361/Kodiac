@@ -85,7 +85,7 @@ class NewStudentForm extends React.Component{
           		/>
        			</FormGroup>
 			<Button>Send</Button>
-			</Form
+			</Form>
 		);
 	}
 }

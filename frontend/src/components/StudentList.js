@@ -25,21 +25,21 @@ class StudentList extends Component {
 				</tr>
 			) : (
 				students.map(students => (
-					<tr key={student.pk}>
-					<td>{student.name}</td>
-					<td>{stduent.email}</td>
-					<td>{student.document}</td>
-					<td>{student.phone}</td>
-					<td>{student.registrationdate}</td>
+					<tr key={students.pk}>
+					<td>{students.name}</td>
+					<td>{students.email}</td>
+					<td>{students.document}</td>
+					<td>{students.phone}</td>
+					<td>{students.registrationdate}</td>
 					<td align="center">
 					<NewStudentModal
 					create={false}
-					student={student}
+					student={students}
 					resetstate={this.props.resetState}
 					/>
 					&nbsp;&nbsp;
 					<ConfirmRemovalModal
-					pk={student.pk}
+					pk={students.pk}
 					resetState={this.props.resetState}
 					/>
 					</td>
