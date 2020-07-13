@@ -1,1 +1,1 @@
-Django-React Based App
+<b>Django-React-Based-App</b>
